@@ -33,7 +33,7 @@ class ImageListViewModel @Inject constructor(
         },
         onRequest = { nextPage ->
 
-            repo.getImageList(nextPage, 30)
+            repo.getImageList(nextPage, 20)
         },
         getNextKey = {
             state.page + 1
